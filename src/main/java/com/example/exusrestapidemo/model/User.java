@@ -38,12 +38,12 @@ public class User implements Serializable {
         this.id = id;
     }
 
-    public String getFirt_name() {
+    public String getFirst_name() {
         return first_name;
     }
 
-    public void setFirt_name(String firt_name) {
-        this.first_name = firt_name;
+    public void setFirst_name(String first_name) {
+        this.first_name = first_name;
     }
 
     public String getLast_name() {

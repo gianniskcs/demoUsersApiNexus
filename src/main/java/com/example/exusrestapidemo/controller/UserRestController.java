@@ -10,7 +10,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping(path = "/getuser")
+@RequestMapping(path = "/")
 public class UserRestController {
 
     @Autowired UserRepository userRepository;
@@ -18,18 +18,18 @@ public class UserRestController {
     @Autowired
     UserService userService;
 
-    @GetMapping(path = "/")
+    @GetMapping(path = "")
     public List<User> findAll() {
         return userRepository.findAll();
     }
 
-    @GetMapping(path = "/{email}")
+    @GetMapping(path = "getuser/{email}")
     public List<User> findUserByEmail(@PathVariable(value = "email") String email) {
         return userRepository.findUserByEmail(email);
 
     }
 
-    @PostMapping("/user")
+    @PostMapping("/saveUser")
     public User createUser(@Valid @RequestBody User user) {
         return userRepository.save(user);
     }
