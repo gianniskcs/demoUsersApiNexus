@@ -16,10 +16,19 @@ public class User implements Serializable {
     private Long id;
 
     @Column
-    private String name;
+    private String first_name;
+
+    @Column
+    private String last_name;
 
     @Column
     private String email;
+
+    @Column
+    private String gender;
+
+    @Column
+    private String ip_address;
 
     public Long getId() {
         return id;
@@ -29,12 +38,20 @@ public class User implements Serializable {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getFirt_name() {
+        return first_name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFirt_name(String firt_name) {
+        this.first_name = firt_name;
+    }
+
+    public String getLast_name() {
+        return last_name;
+    }
+
+    public void setLast_name(String last_name) {
+        this.last_name = last_name;
     }
 
     public String getEmail() {
@@ -45,4 +62,19 @@ public class User implements Serializable {
         this.email = email;
     }
 
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public String getIp_address() {
+        return ip_address;
+    }
+
+    public void setIp_adress(String ip_adress) {
+        this.ip_address = ip_address;
+    }
 }
