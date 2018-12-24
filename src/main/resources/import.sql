@@ -1,2 +1,2 @@
 insert into users (first_name,last_name,email,gender,ip_address) values('Vasilis','Karantousis','a@a.gr','male','1243');
-insert into users (first_name,last_name,email,gender,ip_address) values('Giannis','Karageorgopoulos','bb@.gr','male','1243');
+insert into users (first_name,last_name,email,gender,ip_address) values('Giannis','Karageorgopoulos','b@b.r','male','1243');
